@@ -5,10 +5,10 @@ namespace e_commerce
     {
         static void Main(string[] args)
         {
-            // Update product creation to include weights
-            var cheese = new ExpirableProduct("Chesse" ,200,2,DateTime.Now.AddDays(3),5); // 400g
-            var biscuits = new ExpirableProduct("biscuits", 200, 2, DateTime.Now.AddDays(3),6); // 700g
-            var tv = new ShippableProduct("TV", 300, 3, 5); // 5kg
+            
+            var cheese = new ExpirableProduct("Chesse" ,200,2,DateTime.Now.AddDays(3),5); 
+            var biscuits = new ExpirableProduct("biscuits", 200, 2, DateTime.Now.AddDays(3),6); 
+            var tv = new ShippableProduct("TV", 300, 3, 5); 
             var scratchCard = new NonExpirableNonShippableProduct("Scratch Card", 50,10);
 
             var customer = new Customer("John", 500);
