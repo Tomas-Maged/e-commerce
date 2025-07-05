@@ -11,7 +11,7 @@ namespace e_commerce
     {
         public DateTime ExpirationDate { get; set; }
 
-        // Add Weight property for shippable expirable products
+        
         public double Weight { get; set; }
 
         public ExpirableProduct(string name, double price, int quantity, DateTime expirationDate, double weight = 0)
