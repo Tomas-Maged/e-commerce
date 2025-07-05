@@ -10,12 +10,12 @@ namespace e_commerce
     {
         public CheckoutService(Customer customer, Cart cart)
         {
-            // Shipment notice
+            
             Console.WriteLine("** Shipment notice **");
             double totalWeight = 0;
             foreach (var item in cart.Items)
             {
-                // Only include shippable products (those with Weight > 0)
+                
                 if (item.Product.Weight > 0)
                 {
                     Console.WriteLine($"{item.Quantity}x {item.Product.Name} {item.Product.Weight * 1000}g");
@@ -24,7 +24,7 @@ namespace e_commerce
             }
             Console.WriteLine($"Total package weight {totalWeight}kg\n");
 
-            // Checkout receipt
+            
             Console.WriteLine("** Checkout receipt **");
             double subtotal = 0;
             foreach (var item in cart.Items)
